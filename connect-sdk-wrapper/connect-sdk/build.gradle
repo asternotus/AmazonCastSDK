@@ -30,8 +30,8 @@ dependencies {
     implementation files('libs/AmazonFling.jar')
     implementation files('libs/WhisperPlay.jar')
 
-    implementation project(':connect-sdk-wrapper:samsungmultiscreen')
-    implementation project(':connect-sdk-wrapper:samsunglegacymultiscreen')
+    implementation project(':AmazonCastSDK:connect-sdk-wrapper:samsungmultiscreen')
+    implementation project(':AmazonCastSDK:connect-sdk-wrapper:samsunglegacymultiscreen')
 
     //samsung smart view
 
