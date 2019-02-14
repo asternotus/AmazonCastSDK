@@ -1,14 +1,14 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 27
-    buildToolsVersion '27.0.3'
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    compileSdkVersion rootProject.ext.buildToolsVersion
 
     useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 27
+        compileSdkVersion rootProject.ext.minSdkVersion
+        compileSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
     }
@@ -51,5 +51,5 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.7'
 
     implementation group: 'cz.msebera.android' , name: 'httpclient', version: '4.4.1.1'
-    implementation project(path: ':KudosUtils')
+    implementation project(path: ':AmazonCastSDK:KudosUtils')
 }
